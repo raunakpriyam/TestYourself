@@ -8,18 +8,114 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="16dp"
+            android:hint="Name"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USN:"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/usn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="USN"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEM:"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/sem_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="Enter single digit"
+            android:inputType="number"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEC:"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/sec_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="Sec"
+            android:textAlignment="center" />
+    </LinearLayout>
 
 
     <EditText
         android:id="@+id/etPhoneNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
+        android:hint="Enter 10 digit Mobile Number without code"
         android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:text="GEt otp" />
 </LinearLayout>

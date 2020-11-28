@@ -1,19 +1,764 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Page"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="170dp"
+        android:padding="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:layout_alignParentRight="true"
+                android:id="@+id/submit"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:layout_marginTop="32dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/ques1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="Loading"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser1">
+            <RadioButton
+                android:id="@+id/optionA1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:text="Loading"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/optionB1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+        </RadioGroup>
+
+
+
+
+        <Button
+            android:id="@+id/save1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:text="1"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/ques2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="Loading"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser2">
+            <RadioButton
+                android:id="@+id/optionA2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:checked="true"
+
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading"/>
+
+            <RadioButton
+                android:id="@+id/optionC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+        </RadioGroup>
+
+
+
+
+        <Button
+            android:id="@+id/save2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/ques3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="Loading"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser3">
+            <RadioButton
+                android:id="@+id/optionA3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:checked="true"
+
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionB3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionC3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+        </RadioGroup>
+
+
+
+
+        <Button
+            android:id="@+id/save3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/ques4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="Loading"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser4">
+            <RadioButton
+                android:id="@+id/optionA4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:checked="true"
+
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionB4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionC4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading"/>
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/save4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/ques5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="Loading"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser5">
+            <RadioButton
+                android:id="@+id/optionA5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:checked="true"
+
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionB5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionC5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/save5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/ques6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="Loading"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser6">
+            <RadioButton
+                android:id="@+id/optionA6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:checked="true"
+
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionB6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionC6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/save6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/ques7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="Loading"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser7">
+            <RadioButton
+                android:id="@+id/optionA7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:checked="true"
+
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionB7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionC7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/save7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/ques8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="Loading"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser8">
+            <RadioButton
+                android:id="@+id/optionA8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:checked="true"
+
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionB8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionC8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/save8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/ques9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="Loading"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser9">
+            <RadioButton
+                android:id="@+id/optionA9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:checked="true"
+
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionB9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionC9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/save9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ques_num10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/ques10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="Loading"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUser10">
+            <RadioButton
+                android:id="@+id/optionA10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:checked="true"
+
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionB10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionC10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+
+            <RadioButton
+                android:id="@+id/optionD10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Loading" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/save10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textAlignment="center"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
