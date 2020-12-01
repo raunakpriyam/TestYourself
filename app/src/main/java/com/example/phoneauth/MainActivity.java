@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onVerificationFailed(FirebaseException e) {
                                 Log.d(TAG, "onVerificationFailed:"+e.getLocalizedMessage());
+                                Toast.makeText(MainActivity.this,"Wrong Details",Toast.LENGTH_LONG);
                             }
 
                             @Override
