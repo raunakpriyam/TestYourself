@@ -44,10 +44,6 @@ public class MainActivity extends AppCompatActivity {
         sem=(EditText)findViewById(R.id.sem_edit);
 
 
-
-
-
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

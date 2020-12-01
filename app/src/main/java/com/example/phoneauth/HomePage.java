@@ -2,7 +2,9 @@ package com.example.phoneauth;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -159,6 +161,11 @@ public class HomePage extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this,"You Can't Go Back",Toast.LENGTH_LONG).show();
+    }
+
     private void jsonParse(){
         String url="https://script.googleusercontent.com/macros/echo?user_content_key=1FE11Jlr4EZGov07k1cJIjCqdYqhPA2xVVRHs74KRwwpJevg7W_UKw5fJafwdfKsR3FR4RVAJNaFLn1-4w-2qE3mjzsNuQ-2OJmA1Yb3SEsKFZqtv3DaNYcMrmhZHmUMWojr9NvTBuBLhyHCd5hHa1GhPSVukpSQTydEwAEXFXgt_wltjJcH3XHUaaPC1fv5o9XyvOto09QuWI89K6KjOu0SP2F-BdwUzx1qJeNhDPC0ot0ZmnGR2QeK2ePn8F22rU_KuR8TVlnjdjzMAAwvTDHIgkvOLUTN5y7FLqOV0Tk27B8Rh4QJTQ&lib=MnrE7b2I2PjfH799VodkCPiQjIVyBAxva";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
