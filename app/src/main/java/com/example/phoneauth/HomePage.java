@@ -140,7 +140,9 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+
         questions= new ArrayList<eachquestion>();
         mQueue= Volley.newRequestQueue(this);
         jsonParse();
@@ -155,6 +157,8 @@ public class HomePage extends AppCompatActivity {
                 sec=getIntent().getStringExtra("SEC").trim();
                 addItemtosheet();
                 FirebaseAuth.getInstance().signOut();
+                Intent intent=new Intent(HomePage.this,End.class);
+                startActivity(intent);
                 finish();
 
 
@@ -176,9 +180,13 @@ public class HomePage extends AppCompatActivity {
                             JSONArray jsonArray=response.getJSONArray("Sheet1");
 
                             Random rand = new Random();
+                            int upperbound,lowerbound;
+                            lowerbound=1;
+                            JSONObject q1 = jsonArray.getJSONObject(0);
+                            upperbound = Integer.parseInt(q1.getString("Option_A"))-1;
 
                             for(int k=0;k<10;k++) {
-                                int n = rand.nextInt(26);
+                                int n = rand.nextInt(upperbound-lowerbound+1);
                                 JSONObject q = jsonArray.getJSONObject(n);
                                 int ques_num = q.getInt("Question_No.");
                                 String ques = q.getString("Question");
@@ -232,7 +240,7 @@ public class HomePage extends AppCompatActivity {
                             //c2.setTag("3");
                             d2 = findViewById(R.id.optionD2);
                             //d2.setTag("4");
-                            ques_num2.setText(questions.get(0).getMquestion_num());
+                            ques_num2.setText(questions.get(1).getMquestion_num());
                             ques2.setText(questions.get(1).getMquestion());
                             a2.setText(questions.get(1).getMoptionA());
                             b2.setText(questions.get(1).getMoptionB());
